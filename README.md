@@ -14,6 +14,9 @@ You _cannot_ programmatically change:
 
 - change time (CHGTIME)
 
+Although you _may_ be able to change the datetime on your computer to whatever change time you want on the file, then run `settimes`.
+
+
 # Compiling
 
 ```
