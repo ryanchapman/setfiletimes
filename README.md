@@ -69,3 +69,33 @@ example:
 notes:
   to view all times for a file, you can use "stat -x /tmp/test.txt"
 ```
+
+# Related
+
+## SetFile
+
+There is a tool in the Xcode Command Line Tools called `SetFile` which can set the creation and modification dates on a file.  
+It cannot set access, backup or change time.
+
+For more info, install Xcode Command Line Tools and run `man SetFile`
+
+## GetFileInfo
+
+Also included in the Xcode Command Line Tools is a program called `GetFileInfo`.  It can display creation and modification dates on a file.
+It cannot display access, backup or change time.
+
+For more info, install Xcode Command Line Tools and run `man GetFileInfo`
+
+
+Example run:
+
+```
+$ GetFileInfo /tmp/test.txt
+file: "/private/tmp/test.txt"
+type: "\0\0\0\0"
+creator: "\0\0\0\0"
+attributes: avbstclinmedz
+created: 12/31/2007 10:00:00
+modified: 12/31/2007 10:00:00
+```
+
